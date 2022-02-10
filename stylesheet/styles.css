@@ -3,6 +3,7 @@ body {
     margin: auto;
     padding: 0;
     background-color: white;
+    min-width: 320px;
     max-width: 767px;
   }
   
@@ -138,10 +139,17 @@ body {
     border-color: #d9d9d9;
     border-top: 3px grey solid;
   }
+
+.boxR {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: 10%;
+}
   
   .icon-location .fa-map-marker-alt {
     display: flex;
-    width: 50px;
+    width: 30px;
     height: 50px;
     font-size: 17px;
     justify-content: center;
@@ -150,6 +158,7 @@ body {
   }
   
   .research-bar {
+    display: flex;
     background-color: #d9d9d9;
     border-color: transparent;
     max-width: 50%;
@@ -183,6 +192,7 @@ body {
   .Description .subtile {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 90%;
     margin-top: 0px;
     margin-bottom: 35px;
@@ -232,12 +242,12 @@ body {
     --c:grey;
     text-decoration: none;
     display: flex;
-    width: 87%;
+    width: 90%;
     align-items: center;
     background: #ececec;
     border-radius: 20px;
     margin-bottom: 20px;
-    margin-left: 25px;
+    margin-left: 5%;
     cursor: pointer;
     box-shadow: 2px 2px 7px #d3d3d3;
   }
@@ -295,7 +305,7 @@ body {
     margin: 0px;
     position: relative;
     top: 2px;
-    left: -10px;
+    left: -8px;
     background-color: #9356DC;
     color: white;
     border-radius: 30px;
@@ -331,10 +341,10 @@ body {
   .restaurant_full-card {
     display: flex;
     justify-content: center;
-    width: 87%;
+    width: 90%;
     height: 210px;
     padding: 0px;
-    margin-left: 20px;
+    margin-left: 5%;
     margin-bottom: 20px;
     background-color: white;
     box-shadow: 0 0 20px #0000002e;
