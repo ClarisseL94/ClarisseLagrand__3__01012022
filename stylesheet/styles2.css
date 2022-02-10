@@ -1,0 +1,758 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: auto;
+    padding: 0;
+    background-color: white;
+    max-width: 767px;
+    cursor: pointer;
+  }
+  
+  .navbar {
+    display: flex;
+    position: sticky;
+    background: white;
+    height: 75px;
+    box-shadow: 0 2px 2px #d9d9d9;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .fa-arrow-left {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    top: 35%;  
+  }
+  .fa-arrow-left:hover {
+    color: grey;
+  }
+  
+  #logo .logo{
+    display: flex;
+    margin-left: 0px;
+    width: 160px;
+  }
+    
+  .navbar .logo {
+     display: flex;
+     max-width: 100%;
+     max-height: 100%;
+     margin: 0px;
+  }
+  
+  .background {
+    overflow: hidden;
+    height: 320px;
+  }
+  
+  #backgroundimg img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .Restaurant-menu{
+    position: relative;
+    background-color: #f2f2f2;
+    border-radius: 45px 45px 0px 0px;
+    margin-top: -110px;
+    padding-bottom: 10px;
+    height: auto;
+  }
+  
+  .Page-menu{
+    margin: 0px 10px;
+  }
+  
+  .title-h1-and-icon {
+    display: flex;
+    width: 95%;
+    margin: 5px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "shrikhand";
+    font-size: 20px;
+  }
+  
+  .fa-heart {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .fa-heart:hover{
+    background: linear-gradient(#9356DC, #FF79DA);
+    background-clip: border-box;
+    color: #fff;
+    font-weight: 600;
+    transform: scale(1.2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .enter-title h2{
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 17px;
+    margin: 5px;
+  }
+  
+  .line-title {
+    background-color: #99E2D0;
+    margin: 5px;
+    height: 3px;
+    width: 15%;
+  }
+  
+  .Restaurant-menu .Menu-entry{
+    margin: 0 15px 15px 0;
+    background: white;
+    height: 80px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px #d3d3d3;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .Entry-menu {
+    animation: appear 13s;
+    -moz-animation: appear 13s; /* Firefox */
+    -webkit-animation: appear 13s; /* Safari et Chrome */
+    animation-delay: 1ms;
+  }
+  
+  .Dish-menu {
+    animation: appear 10s;
+    -moz-animation: appear 10s; /* Firefox */
+    -webkit-animation: appear 10s; /* Safari et Chrome */
+    animation-delay: 1ms; 
+  }
+  
+  .Dessert-menu {
+    animation: appear 7s;
+    -moz-animation: appear 7s; /* Firefox */
+    -webkit-animation: appear 7s; /* Safari et Chrome */
+    animation-delay: 1ms;
+  }
+  @keyframes appear {
+    0% {
+        transform: translateY(-500px);
+        opacity:0;
+      }
+  100% {
+        transform: translateY(0);
+        opacity:1;
+      }
+  }
+  @-moz-keyframes appear { /* Firefox */
+    0%  {
+        transform: translateY(-500px);
+        opacity:0;
+      }
+  100%  {
+        transform: translateY(0);
+        opacity:1;
+      }
+  }
+  @-webkit-keyframes appear { /* Safari et Chrome */
+    0%  {
+         transform: translateY(-500px);
+         opacity:0;
+      }
+  100%  {
+         transform: translateY(0);
+         opacity:1;
+      }
+  }
+  
+  .SideAndPrice {
+   display: flex;
+   justify-content: space-between;
+   overflow: hidden;
+   width: 100%;
+   transition-duration: 0.5s;
+  }
+  
+  .price{
+      position: absolute;
+      right: 25px;
+    top: 22px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+  .Menu-entry:hover .check {
+    width: 110px;
+    transition: 0.45s ease-in-out;
+  }
+  
+  .Menu-entry:hover .price{
+      transform: translateX(-100%);
+    transition: 0.50s ease-in-out;
+  }
+  
+  .Menu-entry:hover .side-entry{
+    width: 55%;
+    text-overflow: ellipsis;
+    transition: 0.45s ease-in-out;
+  }
+  
+  .side-entry {
+    margin: 0px 0px 0px 15px;
+    width: 70%;
+    font-size: 13px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .check {
+    position: absolute;
+    width: 65px;
+    transform: translateX(65px);
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform-origin: right 50%;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #99E2D0;
+  }
+  
+  .check .fa-check-circle {
+    position: absolute;
+    left: 5px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+  }
+  
+  .Menu-entry h3{
+   margin: 15px 0px 5px 15px;
+   font-size: 15px;
+   font-family: Roboto,sans-serif;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+  }
+  
+  .dish-title h2{
+    font-weight: 400;
+    font-size: 17px;
+    margin: 5px;
+  }
+  
+  .Restaurant-menu .dish{
+   animation: fadein 4s;
+  }
+  
+  .Restaurant-menu .dish {
+    margin: 0 15px 15px 0;
+    background: white;
+    height: 80px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px #d3d3d3;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .dish:hover .check {
+    width: 110px;
+    transition: 0.45s ease-in-out;
+  }
+  
+  .dish:hover .price {
+      transform: translateX(-100%);
+    transition: 0.50s ease-in-out;
+  }
+  
+  .dish:hover .side-dish{
+    width: 55%;
+    text-overflow: ellipsis;
+    transition: 0.45s ease-in-out;
+  }
+  
+  .side-dish {
+    width: 70%;
+    margin: 0px 0px 0px 15px;
+    font-weight: normal;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .dish h3 {
+    margin: 15px 0px 5px 15px;
+    font-size: 15px;
+    width: 68%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .dessert-title h2 {
+    font-weight: 400;
+    font-size: 17px;
+    margin: 5px;
+  }
+  
+  .dessert {
+    margin: 0 15px 15px 0;
+    background: white;
+    height: 80px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px #d3d3d3;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .dessert:hover .check {
+    width: 110px;
+    transition: 0.45s ease-in-out;
+  }
+  
+  .dessert:hover .price{
+      transform: translateX(-100%);
+    transition: 0.50s ease-in-out;
+  }
+  
+  .dessert:hover .side-dessert{
+    width: 50%;
+    text-overflow: ellipsis;
+    transition: 0.45s ease-in-out;
+  }
+  
+  .side-dessert {
+    width: 70%;
+    font-size: 13px;
+    margin: 0px 0px 0px 15px;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .dessert h3 {
+    margin: 15px 0px 5px 15px;
+    width: 70%;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .order {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  
+  .order-button {
+    display: flex;
+    width: 55%;
+    height: 50px;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+    border-radius: 60px; 
+    border: 0px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
+  .order-button:hover{
+    background: linear-gradient(to bottom, #9356DC, #FF79DA);
+    box-shadow: 0 0 20px #0000002e;
+    transform:scale(1.05);
+  }
+  
+  .footer-blocs {
+    display: flex;
+    background-color: #333333;
+    color: white;
+  }
+  
+  .footer-informations {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+  }
+  
+  .footer-informations .logo {
+    max-width: 70%;
+    max-height: 100%;
+    font-family: 'shrikhand';
+  }
+  
+  .bloc-logo {
+    margin-left: 10px;
+  }
+  
+  .liste-informations li  {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  
+  .filters-button {
+    display: flex;
+    text-align: center;
+    border: 0px;
+    margin: 0px;   
+  }
+  
+  .filters-button i {
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 5px;
+  }
+  
+  .filters-button .fa-utensils {
+    font-size: 20px;
+  }
+  
+  .filters-button .fa-hands-helping {
+    font-size: 16px;
+    margin-right: 12px;
+  }
+  
+  .liste-informations .filters-button p{
+    display: flex;
+    margin: 5px;
+    border: 0px;
+    list-style-type: none;
+  }
+  .liste-informations .filters-button p:hover{
+    text-decoration: underline; 
+  }
+  
+  .liste-informations a {
+    display: flex;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .liste-informations a:hover{
+    text-decoration: underline;
+  }
+  
+  .liste-informations {
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  @media only screen and (min-width:768px) and (max-width: 1023px) { /* tablets */
+  
+  body {
+      min-width: 768px;
+      max-width: 1023px;
+  }
+  
+  .fa-arrow-left {
+     font-size: 30px; 
+  }  
+    
+  #logo .logo{
+      width: 290px;
+  }
+  
+   .Spinner {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    height: 300px;
+    margin: auto;
+  } 
+    
+  .title-h1-and-icon {
+    justify-content: center;
+    font-size: 40px;
+    }  
+  
+  .title-h1-and-icon i {
+    margin-left: 30px;
+    } 
+    
+  .Entry-menu{
+    height: 350px;
+    width: 45%;
+  }
+    
+  .Menu-entry:hover .check {
+    width: 120px;
+    transition: 0.45s ease-in-out;
+  }
+  
+  .Menu-entry:hover .price{
+      transform: translateX(-250%);
+    transition: 0.45s ease-in-out;
+  } 
+  
+  .Menu h3{
+    font-size: 15px; 
+  }
+    
+  .Menu p {
+   font-size: 14px;
+  } 
+    
+  .check .fa-check-circle {
+    left: 10px;
+    top: 20px;
+    font-size: 35px;
+  }
+  
+  .Dish-menu {
+    height: 350px;
+    width: 45%;
+    position: absolute;
+    top:14.5%;
+    left: 50%;
+  }
+    
+  .dish:hover .check {
+    width: 120px;
+    transition: 0.45s ease-in-out;
+  }
+  
+  .dish:hover .price {
+      transform: translateX(-170%);
+    transition: 0.45s ease-in-out;
+  }  
+  
+  .Dessert-menu {
+    margin-left: 25%;
+    margin-bottom: 5%;
+    height: 400px;
+    width: 50%; 
+  }
+  
+  .dessert:hover .check {
+    width: 120px;
+    transition: 0.45s ease-in-out;
+  }
+  
+  .dessert:hover .price{
+      transform: translateX(-250%);
+    transition: 0.45s ease-in-out;
+  } 
+    
+  .line-title {
+    width: 20%;
+  }  
+    
+  .order-button {
+    margin-top: 10px;
+    height: 90px;
+  }
+  
+  .order button {
+    font-size: 27px;  
+  }  
+    
+  .footer-blocs {
+    display: flex;
+    margin-top: 0px;
+  }
+    
+  .footer-informations {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .footer-informations .logo {
+    display: inline;
+    justify-content: center;
+    max-width: 100%;
+  } 
+    
+  .liste-informations {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 25px;
+  } 
+    
+  .filters-button i {
+    margin-right: 0px;
+    margin-left: 25px;
+  }  
+  .liste-informations a{
+    margin-left: 25px; 
+    }
+    
+  .liste-informations li  {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    font-size: 17px;  
+    }
+    
+  .liste-informations li:hover{
+    text-decoration: underline;
+    }  
+  }   
+    
+  @media only screen and (min-width:1024px) { /* pc */  
+    
+  body {
+   min-width: 1024px;
+   max-width: none; 
+   margin: 0;
+  }  
+      
+  .check .fa-check-circle {
+    left: 10px;
+    top: 20px;
+    font-size: 35px;
+  }  
+    
+  .Menu-entry:hover .check {
+    width: 120px;
+  }  
+  .dish:hover .check {
+    width: 120px;
+  } 
+  .dessert:hover .check {
+    width: 120px;
+  }
+    
+  .title-h1-and-icon{
+   justify-content: center;
+   font-size: 40px;
+   margin-top: 0px;
+  }
+    
+  .title-h1-and-icon i{
+   margin-left: 25px;
+  }
+    
+  .Menu{
+   display: grid;
+   padding-bottom: 30px;
+   grid-template-columns: 32% 32% 32%;
+   grid-template-rows: 390px;
+   margin: 0px;
+   gap: 2%;
+  }  
+     
+  .enter-title{
+   display: grid;
+   justify-content: center;
+  }
+      
+  .dish-title{
+    display: grid;
+    justify-content: center;
+  }
+   
+  .Menu-entry:hover .price{
+    right: 15%;
+      transform: translateX(15%);
+    transition: 0.5s ease-in-out;
+  }   
+    
+  .dish:hover .price{
+      right: 15%;
+      transform: translateX(15%);
+    transition: 0.5s ease-in-out;
+  } 
+      
+  .dessert:hover .price{
+      right: 15%;
+      transform: translateX(15%);
+    transition: 0.5s ease-in-out;
+  } 
+    
+  .Menu h3{
+    font-size: 15px;  
+    font-weight: 700;
+  }
+    
+  .Menu p{
+    font-size: 12px;
+  }  
+    
+  .line-title{
+    display: grid;
+    width: 90%;
+    justify-content: center;
+  }
+    
+  .dessert-title{
+    display: grid;
+    justify-content: center;
+  }  
+    
+  .order-button {
+    display: grid;
+    justify-content: center;
+    position: absolute;
+    left: 30%;
+    font-size: 30px;
+  }
+    
+  .order button{
+    height: 90px;
+  }
+    
+  .footer-blocs {
+    display: flex;
+    margin-top: 0px;
+  }
+    
+  .footer-informations {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .footer-informations .logo {
+    display: inline;
+    justify-content: center;
+    max-width: 100%;
+  } 
+    
+  .liste-informations {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 25px;
+  } 
+    
+  .filters-button i {
+    margin-right: 0px;
+    margin-left: 25px;
+  } 
+    
+  .liste-informations a{
+    margin-left: 25px; 
+  }
+    
+  .liste-informations li  {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    font-size: 20px;  
+    }
+   
+  .liste-informations li:hover{
+    text-decoration: underline;
+    }  
+  }    
