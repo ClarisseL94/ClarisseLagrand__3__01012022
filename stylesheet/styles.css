@@ -674,21 +674,20 @@ body {
   }
       
   .HowToUse {
-    width: 95%;
-    margin: 25px;
+    width: 90%;
+    margin: auto;
   }
   
   .HowToUse .HTU-title {
     font-size: 30px;
-    margin-left: 5px;
+    margin-left: -25px;
   }
   
   .HTU-action {
     display: inline-flex; 
     width: 30%;
     height: 45px;
-    margin: 12px;
-    
+    margin: 15px;  
   }
     
   .HTU-action .HTU-text {
@@ -698,7 +697,6 @@ body {
     height: 30px;
     padding: 0px;
     margin-left: 15px;
-   
   }
   
   .HTU-action #icons {
@@ -718,11 +716,31 @@ body {
     
   .restaurants .bloc-restaurants{
     display: grid;  
-    width: 96%;
-    margin: 2%;
+    margin: auto;
     grid-template-columns: 2fr 2fr;
   }
+   
+    .restaurantcardimg .restaurantcardimgimg{
+      height: 280px;
+    }  
     
+  .restaurant_full-card {
+     height: 350px; 
+    }
+  
+  .rest-newtext {
+    width: 100px;
+    height: 35px;
+    top: -320px;
+    left: 80%;
+  }  
+    
+  .rest-new_text {
+    font-size: 17px;
+    top: 8px;
+    left: 17%;
+  }  
+        
   .footer-informations {
     display: flex;
     flex-wrap: wrap;
